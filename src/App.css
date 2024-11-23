@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 8%;
+    border-bottom: 1px solid #ebebebeb;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+    font-weight: 600;
+    font-size: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar ul{
+    padding: 10px 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.navbar ul li{
+    display: inline-flex;
+    padding: 5px 10px;
+    margin: 0 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar button{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+}
+.navbar a{
+    color: #000;
+    font-weight: 400;
+}
+a.active{
+    color: teal;
+}
+.userDetails{
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
 }
